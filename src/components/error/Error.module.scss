@@ -1,0 +1,47 @@
+.errorMainDiv {
+	font-family: IRANSans;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url('../../assets/images/errorBackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: center;
+}
+.backgroundHover {
+	background-color: rgba(0, 0, 0, 0.795);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.title {
+	color: rgba(194, 9, 9, 0.753);
+	font-weight: 700;
+	font-size: 28px;
+}
+.subtitle {
+	color: rgba(194, 9, 9, 0.753);
+	font-weight: 600;
+	font-size: 20px;
+	margin: 30px 0;
+}
+.errorButton {
+	font-family: IRANSans;
+	font-weight: 500;
+	font-size: 14px;
+	border: 1px solid white;
+	color: white;
+	background-color: inherit;
+	outline: none;
+	border-radius: 8px;
+	padding: 5px 10px;
+	&:hover {
+		cursor: pointer;
+	}
+}

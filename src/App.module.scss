@@ -1,0 +1,22 @@
+.rotateDiv {
+	display: none;
+}
+@media screen and (orientation: portrait) {
+	.rotateDiv {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: center;
+		color: rgb(233, 85, 0);
+		z-index: 500;
+		background-color: rgba(0, 0, 0, 0.856);
+		padding: 0 20px;
+		font-weight: 600;
+		font-size: 18px;
+	}
+}

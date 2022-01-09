@@ -1,0 +1,178 @@
+.mainDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	// margin-left: 64px;
+	margin-left: 7%;
+	font-size: 10px;
+	background-color: inherit;
+	div {
+		text-align: center;
+		font-weight: 500;
+		color: white;
+
+		// font-size: 15px;
+	}
+	.mainBlock {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		border: 4px solid white;
+		border-top: none;
+		// width: 252px;
+		width: 29.6%;
+		// background-color: rgba(255, 255, 255, 0.685);
+		background-color: inherit;
+		color: black;
+		&:nth-child(1),
+		&:nth-child(2) {
+			border-right: none;
+		}
+	}
+	.footerBlock {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 30px;
+		.footerChild {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			height: 100%;
+			position: relative;
+			&:first-child {
+				border-right: 4px solid white;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	.upperBlock {
+		border-bottom: 4px solid white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 30px;
+		position: relative;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.coinContainer {
+		position: absolute;
+		left: 20%;
+		z-index: 200;
+		&:nth-child(2) {
+			bottom: 10px;
+		}
+		&:nth-child(3) {
+			bottom: 12px;
+		}
+		&:nth-child(4) {
+			bottom: 14px;
+		}
+		&:nth-child(5) {
+			bottom: 16px;
+		}
+	}
+	.blackBackground {
+		background-color: black;
+	}
+	.redBackground {
+		background-color: red;
+
+		// test
+		// width: 0;
+		// height: 0;
+		// border: 30px solid transparent;
+		// border-bottom-color: red;
+		// position: relative;
+		// top: -50px;
+		// &::after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	left: -50px;
+		// 	top: 50px;
+		// 	width: 0;
+		// 	height: 0;
+		// 	border: 30px solid transparent;
+		// 	border-top-color: red;
+		// }
+	}
+
+	@media screen and (min-width: 600px) {
+		font-size: 11px;
+		.upperBlock,
+		.footerBlock {
+			height: 30px;
+		}
+	}
+
+	@media screen and (min-width: 860px) {
+		font-size: 12px;
+		.upperBlock,
+		.footerBlock {
+			height: 35px;
+		}
+		.coinContainer {
+			&:nth-child(2) {
+				bottom: 12px;
+			}
+			&:nth-child(3) {
+				bottom: 15px;
+			}
+			&:nth-child(4) {
+				bottom: 18px;
+			}
+			&:nth-child(5) {
+				bottom: 21px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		font-size: 13px;
+		.upperBlock,
+		.footerBlock {
+			height: 45px;
+		}
+		.coinContainer {
+			&:nth-child(2) {
+				bottom: 15px;
+			}
+			&:nth-child(3) {
+				bottom: 19px;
+			}
+			&:nth-child(4) {
+				bottom: 23px;
+			}
+			&:nth-child(5) {
+				bottom: 27px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		font-size: 15px;
+		.upperBlock,
+		.footerBlock {
+			height: 60px;
+		}
+		.coinContainer {
+			&:nth-child(2) {
+				bottom: 20px;
+			}
+			&:nth-child(3) {
+				bottom: 24px;
+			}
+			&:nth-child(4) {
+				bottom: 29px;
+			}
+			&:nth-child(5) {
+				bottom: 33px;
+			}
+		}
+	}
+}

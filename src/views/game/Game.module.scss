@@ -1,0 +1,336 @@
+@import url(../../assets/fonts/style.css);
+
+.mainDiv {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: rgb(21, 14, 82);
+	background-image: linear-gradient(rgb(14, 10, 46), rgb(21, 14, 82), rgb(14, 10, 46));
+}
+
+.rotateDiv {
+	display: none;
+}
+.header {
+	font-size: 10px;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	margin: 2px 0;
+}
+.playerInfoContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.middleContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.subMiddleContainer {
+	width: 98%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: inherit;
+	// background-color: rgb(41, 110, 9);
+	// border: 2px solid white;
+	// border-radius: 5px 90px 90px 5px;
+}
+.middleTableContainer {
+	width: 100%;
+}
+.upperTableWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.zeroContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	border: 4px solid white;
+	border-right: none;
+	border-radius: 80% 0 0 80%;
+	position: relative;
+	font-size: 15px;
+	font-weight: 500;
+	color: black;
+	// width: 60px;
+	width: 7%;
+	background-color: inherit;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.zeroWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.zeroNumber {
+	background-color: green;
+	color: white;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.coinContainer {
+	position: absolute;
+	left: 20%;
+	&:nth-child(2) {
+		bottom: 82px;
+	}
+	&:nth-child(3) {
+		bottom: 87px;
+	}
+	&:nth-child(4) {
+		bottom: 92px;
+	}
+	&:nth-child(5) {
+		bottom: 97px;
+	}
+}
+.tableContainer {
+	margin: 20px;
+	width: 400px;
+}
+.footerContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.footerSubContainer {
+	width: 98%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.betValueContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 4px;
+	font-size: 20px;
+	> div {
+		border: none;
+		border-radius: 10px;
+		background-color: rgba(0, 0, 0, 0.712);
+		font-family: IRANSans;
+		text-align: center;
+		color: rgb(255, 230, 0);
+		width: 80%;
+		padding: 5px;
+	}
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 820px) {
+	.tableContainer {
+		width: 350px !important;
+		margin: 5px 0 0 0;
+	}
+	.zeroNumber {
+		height: 15px !important;
+		width: 15px !important;
+	}
+	.header {
+		font-size: 11px !important;
+		margin: 4px 0 !important;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.tableContainer {
+		width: 450px;
+	}
+	.zeroNumber {
+		height: 25px;
+		width: 25px;
+	}
+	.header {
+		font-size: 11px;
+		margin: 4px 0;
+	}
+	.betValueContainer{
+		margin-top: 3px;
+		font-size: 11px;
+	}
+	
+}
+
+@media screen and (min-width: 860px) {
+	.tableContainer {
+		width: 550px;
+	}
+	.header {
+		font-size: 14px;
+		margin: 8px 0;
+	}
+	.subMiddleContainer {
+		width: 85%;
+		padding: 10px;
+	}
+	.footerSubContainer {
+		width: 85%;
+	}
+	.zeroNumber {
+		height: 30px;
+		width: 30px;
+	}
+	.betValueContainer{
+		margin-top: 6px;
+		font-size: 11px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.tableContainer {
+		width: 700px;
+	}
+	.subMiddleContainer {
+		width: 80%;
+	}
+	.footerSubContainer {
+		width: 80%;
+	}
+	.zeroNumber {
+		height: 33px;
+		width: 33px;
+	}
+	.header {
+		font-size: 15px;
+		margin: 10px 0;
+	}
+	.betValueContainer{
+		margin-top: 8px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.tableContainer {
+		width: 900px;
+	}
+	.header {
+		font-size: 20px;
+		margin: 20px 0;
+	}
+	.zeroNumber {
+		height: 40px;
+		width: 40px;
+	}
+	.betValueContainer{
+		margin-top: 10px;
+		font-size: 17px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.zeroNumber {
+		height: 45px;
+		width: 45px;
+	}
+	.betValueContainer{
+		margin-top: 10px;
+		font-size: 20px;
+		>div{
+			padding: 8px;
+		}
+	}
+}
+
+:global {
+	.bhdLno {
+		max-width: 445px !important;
+		max-height: 445px !important;
+	}
+	@media (min-width: 600px) {
+		.bhdLno {
+			max-width: 250px !important;
+			max-height: 250px !important;
+		}
+	}
+	@media (min-width: 860px) {
+		.bhdLno {
+			max-width: 300px !important;
+			max-height: 300px !important;
+		}
+	}
+	@media (min-width: 1280px) {
+		.bhdLno {
+			max-width: 350px !important;
+			max-height: 350px !important;
+		}
+	}
+	@media (min-width: 1280px) {
+		.bhdLno {
+			max-width: 445px !important;
+			max-height: 445px !important;
+		}
+	}
+	.MuiSnackbarContent-root {
+		direction: rtl !important;
+		background-color: rgba(0, 0, 0, 0.678) !important;
+		width: fit-content !important;
+		border-radius: 15px !important;
+		font-weight: bold !important;
+	}
+	.MuiSnackbarContent-message {
+		text-align: center;
+	}
+	.MuiSnackbar-root {
+		width: fit-content !important ;
+	}
+	.MuiSnackbarContent-root {
+		padding: 0 15px !important;
+	}
+	.MuiSnackbarContent-message {
+		padding: 4px 0 !important;
+		font-size: 12px !important;
+		font-family: IRANSans;
+	}
+	@media (min-width: 600px) {
+		.MuiSnackbarContent-root {
+			flex-grow: initial;
+			min-width: fit-content !important;
+		}
+	}
+	@media (min-width: 860px) {
+		.MuiSnackbarContent-message {
+			padding: 5px 15px !important;
+			font-size: 15px !important;
+		}
+	}
+	@media (min-width: 1280px) {
+		.MuiSnackbarContent-message {
+			padding: 10x 25px !important;
+			font-size: 20px !important;
+		}
+	}
+	@media (min-width: 1280px) {
+		.MuiSnackbarContent-message {
+			padding: 20px 40px !important;
+			font-size: 25px !important;
+		}
+	}
+	@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 820px) {
+		.bhdLno {
+			max-width: 200px !important;
+			max-height: 200px !important;
+		}
+	}
+}

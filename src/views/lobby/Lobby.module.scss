@@ -1,0 +1,256 @@
+@import url(../../assets/fonts/style.css);
+
+.mainDiv {
+  font-family: IRANSans;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../assets/images/errorBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  direction: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.backgroundHover {
+  background-color: rgba(0, 0, 0, 0.705);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.upperPart {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.innerUpperPart {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.144);
+  border-radius: 0 0 10px 10px;
+  padding: 1.25em 1.75em;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 90%;
+  color: white;
+}
+.leftPart,
+.rightPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  //   width: 45%;
+  font-size: 22px;
+  .lvl_player {
+    order: 1;
+  }
+}
+
+.rightPart {
+  justify-content: flex-end;
+}
+.rightSentenceContainer {
+  //   width: 70%;
+  > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.homeImage {
+  width: 30px;
+  padding-right: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.plusImage {
+  width: 25px;
+  border-left: 1px solid;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+.manImage {
+  box-shadow: 0 3px 6px 0 #a4c2f7;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.iconContainer,
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.pannelLeft {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.pannelRight {
+  flex-wrap: wrap;
+  > div {
+    width: 100%;
+    flex-wrap: wrap;
+    div {
+      text-align: right;
+      margin-right: 30px;
+    }
+  }
+}
+.button {
+  background-color: #082e2d;
+  color: white;
+  padding: 0.8em 1em;
+  font-family: IRANSans;
+  font-weight: bold;
+  width: 100%;
+  max-width: 160px;
+  font-size: 1.2em;
+
+  border: 1px solid rgba(255, 255, 255, 0.603);
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+.NoCredit {
+  color: black;
+  font-family: IRANSans;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: default;
+  padding: 10px 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid #000;
+  }
+}
+@media screen and (min-width: 900px) {
+.marLeft{
+	margin-left: 0.5rem;
+}
+  .pannelRight {
+    > div {
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .button {
+    font-size: 1em;
+  }
+  .manImage {
+    width: 53px;
+    height: 53px;
+  }
+
+  .leftPart,
+  .rightPart {
+    font-size: 1em;
+    .lvl_player {
+      order: 0;
+    }
+  }
+  .pannelRight {
+    > div {
+      div {
+        margin-right: 17px;
+      }
+    }
+  }
+  //   .leftPart,
+  //   .rightPart {
+  //     width: 45%;
+  //   }
+  //   .homeImage {
+  //     width: 40px;
+  //   }
+  //   .coinsImage {
+  //     width: 40px;
+  //   }
+  //   .manImage {
+  //     width: 40px;
+  //   }
+  //   .upperPart {
+  //     font-size: 14px;
+  //   }
+}
+
+@media screen and (min-width: 860px) {
+  //   .leftPart {
+  //     width: 50%;
+  //   }
+  //   .rightPart {
+  //     width: 50%;
+  //   }
+  //   .upperPart {
+  //     font-size: 15px;
+  //   }
+}
+
+@media screen and (min-width: 1080px) {
+  //   .leftPart {
+  //     width: 50%;
+  //   }
+  //   .rightPart {
+  //     width: 50%;
+  //   }
+  //   .upperPart {
+  //     font-size: 18px;
+  //   }
+  //   .manImage {
+  //     width: 50px;
+  //   }
+}
+
+@media screen and (min-width: 1280px) {
+  //   .leftPart {
+  //     width: 35%;
+  //   }
+  //   .rightPart {
+  //     width: 50%;
+  //   }
+
+  //   .coinsImage {
+  //     width: 50px;
+  //   }
+  //   .manImage {
+  //     width: 80px;
+  //   }
+  //   .upperPart {
+  //     font-size: 20px;
+  //   }
+}

@@ -1,0 +1,50 @@
+.mainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    width: 300px;
+    font-size: 7px;
+    >div{
+        direction: rtl;
+        border-radius: 15px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.164);
+        padding: 2px 0;
+        width: 25%;
+        text-align: center;
+    }
+    .nameContainer{
+        width: 30%;
+    }
+
+    @media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 820px) {
+        width: 300px !important;
+        font-size: 9px !important;
+        >div{
+            padding: 3px 0;
+        }
+    }
+
+    @media screen and (min-width: 600px){
+        width: 400px;
+        font-size: 12px;
+        >div{
+            padding: 3px 0;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        width: 600px;
+        font-size: 17px;
+        >div{
+            padding: 5px 0;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        width: 600px;
+        font-size: 20px;
+        >div{
+            padding: 5px 0;
+        }
+    }
+}

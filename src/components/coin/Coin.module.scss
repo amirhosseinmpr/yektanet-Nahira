@@ -1,0 +1,106 @@
+.mainDiv {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+	backface-visibility: hidden;
+	font-size: 4px;
+
+	background-image: url('../../assets/images/chip-purple.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: center;
+}
+.yellow {
+	background-image: url('../../assets/images/chip-yellow.png');
+}
+.red {
+	background-image: url('../../assets/images/chip-red.png');
+}
+.purple {
+	// border-color: rgb(90, 27, 141) !important;
+	// box-shadow: 0 0 0 0.2em rgb(90, 27, 141);
+	// .number {
+	// 	border-color: rgb(90, 27, 141);
+	// }
+	background-image: url('../../assets/images/chip-purple.png');
+}
+.gray {
+}
+.green {
+	background-image: url('../../assets/images/chip-green.png');
+}
+.big {
+	width: 30px;
+	height: 30px;
+	font-size: 8px;
+}
+.number {
+	text-align: center;
+	color: black !important;
+	font-weight: 500;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 50%;
+}
+
+@media screen and (min-width: 600px) {
+	.mainDiv {
+		width: 20px;
+		height: 20px;
+		font-size: 5px;
+	}
+	.big {
+		width: 35px;
+		height: 35px;
+		font-size: 10px !important;
+	}
+}
+
+@media screen and (min-width: 860px) {
+	.mainDiv {
+		width: 25px;
+		height: 25px;
+		font-size: 7px;
+	}
+	.big {
+		width: 45px;
+		height: 45px;
+		font-size: 11px !important;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.mainDiv {
+		width: 30px;
+		height: 30px;
+		font-size: 7px;
+	}
+	.big {
+		width: 55px;
+		height: 55px;
+		font-size: 13px !important;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.mainDiv {
+		width: 35px;
+		height: 35px;
+		font-size: 8px;
+	}
+	.big {
+		width: 65px;
+		height: 65px;
+		font-size: 15px !important;
+	}
+}

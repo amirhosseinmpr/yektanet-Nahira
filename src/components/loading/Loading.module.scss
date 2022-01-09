@@ -1,0 +1,114 @@
+// breakpoints
+$mobileBreakpoint: 500px;
+$tabletBreakpoint: 850px;
+$smallTabletBreakpoint: 768px;
+$laptopBreakpoint: 1024px;
+// colors
+$atlantis: #b4cf30;
+$babyPowder: #fcfcec;
+$cyan: #10fff9;
+$grey: #ebebeb;
+$doveGrey: #707070;
+$darkGrey: #7c7c7c;
+$brightGreen: #55ea13;
+$green: #14b545;
+$darkGreen: #1dc043;
+$blue: #007fff;
+$darkYellow: #d0a53d;
+$gold: #fcc24c;
+$goldenGrass: #dea42e;
+$Stiletto: #993636;
+$shark: #1b1c1c;
+$white_2: #eff2fa;
+$white_3: #f5f5f5;
+$raven: #7d8088;
+$blueRibbon: #0043ff;
+$crimson: #ea1313;
+
+// gradients
+$darkBlueGradient: linear-gradient(to bottom, #4748e9, #242475);
+// border radiuses
+$veryLightBorderRadius: 5px;
+$lightBorderRadius: 10px;
+$ellipseBorderRadius: 50px;
+$circleBorderRadius: 50%;
+// transition times
+$shortTransitionTime: 0.2s;
+$mediumTransitionTime: 1s;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: $raven;
+  font-size: 16px;
+  color: #f2e48a;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  direction: ltr;
+
+  > div {
+    width: 100%;
+  }
+
+  .copyRight {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  :global {
+    .ui.progress {
+      border-radius: 0.2rem;
+      .label {
+        margin-top: 1em;
+        font-size: 13px;
+      }
+    }
+    div.logo_icon {
+      width: 100%;
+      height: 42%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    div.progress-logo {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      height: 52%;
+    }
+    .ui.progress .bar > .progress {
+      right: 50%;
+      transform: translate(50%, 0);
+      color: white;
+    }
+    .ui.progress .bar {
+      height: 1.6em !important;
+      border-radius: 0.2rem;
+    }
+    .ui.blue.progress .bar {
+      background-color: #007bff !important;
+    }
+  }
+  @media screen and (max-width: 1070px) {
+    & {
+      width: 100% !important;
+    }
+  }
+}
+.progresss {
+  background-color: #7d8088;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    transform: scale(0.8);
+  }
+}

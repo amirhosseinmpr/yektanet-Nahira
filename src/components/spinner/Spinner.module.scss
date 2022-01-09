@@ -1,0 +1,140 @@
+.mainDiv {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	.scoreContainer {
+		color: white;
+		position: absolute;
+		/* left: 46%; */
+		/* top: 45%; */
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.scoreWrapper {
+		width: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.scoreComponent {
+		width: 50px;
+		height: 50px;
+		border: 1px solid white;
+		font-size: 20px;
+		font-weight: 400;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border-radius: 50%;
+	}
+	.colorName{
+		font-size: 7px;
+	}
+	.redScore {
+		background-color: red;
+	}
+	.blackScore {
+		background-color: black;
+	}
+	.greenScore {
+		background-color: green;
+	}
+
+	@media screen and (min-width: 600px) {
+		.closeButton {
+			font-size: 13px;
+			padding: 10px 15px;
+		}
+		.scoreComponent {
+			width: 70px;
+			height: 70px;
+			font-size: 20px;
+		}
+		.colorName{
+			font-size: 8px;
+		}
+	}
+
+	@media screen and (min-width: 860px) {
+		.closeButton {
+			font-size: 14px;
+			padding: 10px 15px;
+		}
+		.scoreComponent {
+			width: 110px;
+    		height: 110px;
+			font-size: 30px;
+		}
+		.colorName{
+			font-size: 10px;
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		.closeButton {
+			font-size: 13px;
+			padding: 10px 15px;
+		}
+		.scoreComponent {
+			width: 130px;
+    		height: 130px;
+			font-size: 30px;
+		}
+		.colorName{
+			font-size: 12px;
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		.closeButton {
+			font-size: 13px;
+			padding: 10px 15px;
+		}
+		.scoreComponent {
+			width: 165px;
+    		height: 165px;
+			font-size: 35px;
+		}
+		.colorName{
+			font-size: 13px;
+		}
+	}
+}
+
+:global {
+	.bJCmFu {
+		width: 160px !important;
+		height: 160px !important;
+	}
+	@media screen and (min-width: 600px) {
+		.bJCmFu {
+			width: 180px !important;
+			height: 180px !important;
+		}
+	}
+	@media screen and (min-width: 860px) {
+		.bJCmFu {
+			width: 250px !important;
+			height: 250px !important;
+		}
+	}
+	@media screen and (min-width: 1280px) {
+		.bJCmFu {
+			width: 300px !important;
+			height: 300px !important;
+		}
+	}
+	@media screen and (min-width: 1280px) {
+		.bJCmFu {
+			width: 320px !important;
+			height: 320px !important;
+		}
+	}
+}

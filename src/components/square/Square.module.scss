@@ -1,0 +1,154 @@
+.mainDiv {
+	// width: 60px;
+	width: 7%;
+	// height: 60px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	background-color: inherit;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+.coinsContainer {
+	position: absolute;
+	left: 30%;
+}
+.coinContainer {
+	z-index: 200;
+	position: absolute;
+	left: 8%;
+	&:nth-child(2) {
+		bottom: 10px;
+	}
+	&:nth-child(3) {
+		bottom: 12px;
+	}
+	&:nth-child(4) {
+		bottom: 14px;
+	}
+	&:nth-child(5) {
+		bottom: 16px;
+	}
+}
+.black {
+	background-color: black !important ;
+	transform: none !important;
+}
+.red {
+	background-color: rgba(255, 0, 0, 0.829) !important;
+	transform: none !important;
+}
+.transparent {
+	background-color: rgba(255, 255, 255, 0.685);
+
+	.number {
+		color: black;
+	}
+}
+.numberContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 70%;
+}
+.number {
+	width: 80%;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 700;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: inherit;
+	transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 600px) {
+	.mainDiv {
+		height: 30px;
+	}
+	.number {
+		font-size: 12px;
+	}
+	.coinContainer {
+		left: 15%;
+	}
+}
+
+@media screen and (min-width: 860px) {
+	.mainDiv {
+		height: 35px;
+	}
+	.number {
+		font-size: 13px;
+	}
+	.coinContainer {
+		left: 8%;
+		&:nth-child(2) {
+			bottom: 12px;
+		}
+		&:nth-child(3) {
+			bottom: 15px;
+		}
+		&:nth-child(4) {
+			bottom: 18px;
+		}
+		&:nth-child(5) {
+			bottom: 21px;
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.mainDiv {
+		height: 45px;
+	}
+	.number {
+		font-size: 15px;
+	}
+	.coinContainer {
+		left: 8%;
+		&:nth-child(2) {
+			bottom: 15px;
+		}
+		&:nth-child(3) {
+			bottom: 18px;
+		}
+		&:nth-child(4) {
+			bottom: 21px;
+		}
+		&:nth-child(5) {
+			bottom: 24px;
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.mainDiv {
+		height: 60px;
+	}
+	.number {
+		font-size: 18px;
+	}
+	.coinContainer {
+		left: 12%;
+		&:nth-child(2) {
+			bottom: 20px;
+		}
+		&:nth-child(3) {
+			bottom: 25px;
+		}
+		&:nth-child(4) {
+			bottom: 30px;
+		}
+		&:nth-child(5) {
+			bottom: 35px;
+		}
+	}
+}

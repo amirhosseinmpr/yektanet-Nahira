@@ -1,0 +1,121 @@
+.mainDiv {
+	width: 4px;
+	height: 4px;
+	background-color: white;
+	position: relative;
+	z-index: 200;
+}
+.coinContainer {
+	position: absolute;
+	right: -7px;
+	top: -5px;
+	&:nth-child(2) {
+		top: -7px;
+	}
+	&:nth-child(3) {
+		top: -9px;
+	}
+	&:nth-child(4) {
+		top: -11px;
+	}
+	&:nth-child(5) {
+		top: -13px;
+	}
+}
+.available {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 820px) {
+	.coinContainer {
+		right: -8px;
+		top: -5px;
+		&:nth-child(2) {
+			top: -7px;
+		}
+		&:nth-child(3) {
+			top: -9px;
+		}
+		&:nth-child(4) {
+			top: -11px;
+		}
+		&:nth-child(5) {
+			top: -13px;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.coinContainer {
+		right: -8px;
+		top: -5px;
+		&:nth-child(2) {
+			top: -7px;
+		}
+		&:nth-child(3) {
+			top: -9px;
+		}
+		&:nth-child(4) {
+			top: -11px;
+		}
+		&:nth-child(5) {
+			top: -13px;
+		}
+	}
+}
+@media screen and (min-width: 860px){
+	.coinContainer {
+		right: -10px;
+		top: -7px;
+		&:nth-child(2) {
+			top: -9px;
+		}
+		&:nth-child(3) {
+			top: -12px;
+		}
+		&:nth-child(4) {
+			top: -15px;
+		}
+		&:nth-child(5) {
+			top: -18px;
+		}
+	}
+}
+@media screen and (min-width: 1280px){
+	.coinContainer {
+		right: -13px;
+		top: -9px;
+		&:nth-child(2) {
+			top: -12px;
+		}
+		&:nth-child(3) {
+			top: -16px;
+		}
+		&:nth-child(4) {
+			top: -20px;
+		}
+		&:nth-child(5) {
+			top: -24px;
+		}
+	}
+}
+@media screen and (min-width: 1280px){
+	.coinContainer {
+		right: -16px;
+		top: -12px;
+		&:nth-child(2) {
+			top: -16px;
+		}
+		&:nth-child(3) {
+			top: -21px;
+		}
+		&:nth-child(4) {
+			top: -26px;
+		}
+		&:nth-child(5) {
+			top: -31px;
+		}
+	}
+}

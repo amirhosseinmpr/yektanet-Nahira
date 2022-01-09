@@ -1,0 +1,109 @@
+.mainDiv {
+	background-color: white;
+	height: 4px;
+	// width: 60px;
+	width: 7%;
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+}
+.coinContainer {
+	position: absolute;
+	right: 1.5px;
+    top: -6px;
+	&:nth-child(2) {
+		top: -8px;
+	}
+	&:nth-child(3) {
+		top: -10px;
+	}
+	&:nth-child(4) {
+		top: -12px;
+	}
+	&:nth-child(5) {
+		top: -14px;
+	}
+}
+.available {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.coinContainer {
+		position: absolute;
+		right: 3px;
+		top: -6px;
+		&:nth-child(2) {
+			top: -8px;
+		}
+		&:nth-child(3) {
+			top: -10px;
+		}
+		&:nth-child(4) {
+			top: -12px;
+		}
+		&:nth-child(5) {
+			top: -14px;
+		}
+	}
+}
+@media screen and (min-width: 860px){
+	.coinContainer {
+		position: absolute;
+		right: 2px;
+		top: -10px;
+		&:nth-child(2) {
+			top: -12px;
+		}
+		&:nth-child(3) {
+			top: -14px;
+		}
+		&:nth-child(4) {
+			top: -16px;
+		}
+		&:nth-child(5) {
+			top: -18px;
+		}
+	}
+
+}
+@media screen and (min-width: 1280px){
+	.coinContainer {
+		position: absolute;
+		right: 2px;
+		top: -12px;
+		&:nth-child(2) {
+			top: -15px;
+		}
+		&:nth-child(3) {
+			top: -18px;
+		}
+		&:nth-child(4) {
+			top: -21px;
+		}
+		&:nth-child(5) {
+			top: -24px;
+		}
+	}
+}
+@media screen and (min-width: 1280px){
+	.coinContainer {
+		position: absolute;
+		right: 5px;
+		top: -15px;
+		&:nth-child(2) {
+			top: -19px;
+		}
+		&:nth-child(3) {
+			top: -23px;
+		}
+		&:nth-child(4) {
+			top: -27px;
+		}
+		&:nth-child(5) {
+			top: -31px;
+		}
+	}
+}
